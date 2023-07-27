@@ -44,7 +44,7 @@ foreach(file ${test_sources})
   if(${CMAKE_PROJECT_NAME}_USE_GTEST)
     # On windows GTest is called gtest
     if(WIN32)
-      find_package(gtest REQUIRED) # dos/windows requires lowercase GTest
+      find_package(gtest REQUIRED) # Windows requires lowercase GTest
     else()
       find_package(GTest REQUIRED)
     endif()
